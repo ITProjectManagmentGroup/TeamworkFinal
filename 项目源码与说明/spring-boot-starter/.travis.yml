@@ -1,0 +1,21 @@
+# safelist
+branches:
+  only:
+      - /.*/
+
+matrix:
+  fast_finish: true
+  include:
+      - os: linux
+        dist: xenial
+        sudo: required
+
+language: java
+jdk:
+  - openjdk8
+
+script: |
+
+  ./gradlew clean verGJF
+  ./gradlew clean build	
+  ./gradlew clean test

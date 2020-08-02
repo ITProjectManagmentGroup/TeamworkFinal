@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Register</title>
+    <link href="asserts/css/bootstrap.min.css" rel="stylesheet">
+    <link href="asserts/css/login.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+<form class="form-signin" action="/register" method="post">
+    <h1 class="title">欢迎来到中山大学学生服务中心</h1>
+    <div class="box">
+        <label class="sr-only">netid</label>
+        <input name="netid" type="text" class="form-control" placeholder="Netid" required="" autofocus="">
+        <label class="sr-only">昵称</label>
+        <input name="nickname" type="text" class="form-control" placeholder="Nickname" required="" autofocus="">
+        <label class="sr-only">邮箱</label>
+        <input name="email" type="text" class="form-control" placeholder="Email" required="" autofocus="">
+        <label class="sr-only">Password</label>
+        <input name="password" type="password" class="form-control" placeholder="Password" required="">
+        <a class="btn btn-lg btn-primary btn-block" href="/login">登录</a>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">注册</button></div>
+</form>
+
+</body>
+
+</html>
